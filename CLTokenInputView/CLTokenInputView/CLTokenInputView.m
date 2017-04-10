@@ -530,7 +530,7 @@ static CGFloat const FIELD_MARGIN_X = 4.0; // Note: Same as CLTokenView.PADDING_
     [_fieldView removeFromSuperview];
     _fieldView = fieldView;
     if (_fieldView != nil) {
-        [self addSubview:_fieldView];
+        [self addSubview:(UIView * _Nonnull)_fieldView];
     }
     [self repositionViews];
 }
@@ -553,7 +553,7 @@ static CGFloat const FIELD_MARGIN_X = 4.0; // Note: Same as CLTokenView.PADDING_
     _accessoryView = accessoryView;
 
     if (_accessoryView != nil) {
-        [self addSubview:_accessoryView];
+        [self addSubview:(UIView * _Nonnull)_accessoryView];
     }
     [self repositionViews];
 }
